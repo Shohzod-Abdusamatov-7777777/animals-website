@@ -1,0 +1,42 @@
+.star {
+  animation: star 1.5s infinite alternate;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+}
+.remove{
+  display: none;
+  opacity: 0;
+  visibility: visible;
+}
+.fadeout {
+  animation:fadeout 2s linear;
+  animation-fill-mode: forwards;
+}
+.loader {
+    animation: loader 1.5s infinite linear;
+}
+@keyframes loader {
+    0%{
+         transform: rotate(180deg);
+    }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes star {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeout {
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
